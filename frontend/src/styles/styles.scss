@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../static/fonts/Roboto-Regular.ttf");
+
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url("../static/fonts/Roboto-Medium.ttf");
+}
+
+.login {
+  .container {
+    max-width: 397px;
+    .login__title {
+      font-family: 'RobotoMedium', sans-serif;
+      font-size: 40px;
+      line-height: 47px;
+      color: #052C65;
+    }
+
+    .login__form {
+      width: 100%;
+    }
+  }
+}
