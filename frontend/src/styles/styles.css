@@ -108,6 +108,7 @@ img {
 
     .dropdown-menu {
         font-size: 14px;
+        z-index: 1000;
     }
 
     .aside__up {
@@ -282,6 +283,96 @@ img {
             }
         }
     }
+}
+
+.incomes {
+    .container {
+        .row {
+            .card {
+                max-width: 352px;
+                min-height: 121px;
+
+                .card-title {
+                    font-family: 'RobotoMedium', sans-serif;
+                    font-size: 28px;
+                    line-height: 33px;
+                    color: #290661;
+                }
+
+                .actions {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .card-body svg {
+                    color: #CED4DA;
+                }
+
+                .card-body:hover {
+                    background-color: #e0e2e2;
+                }
+
+                .card-body:hover svg {
+                    color: #2e2c2c;
+                }
+            }
+
+        }
+    }
+}
+
+.modal {
+    .modal-dialog {
+        justify-content: center;
+        padding: 0 10px;
+
+        .modal-content {
+            width: auto;
+
+            .modal-body {
+                /*max-width: 530px;*/
+                text-align: center;
+                padding: 40px;
+                width: max-content;
+
+                .modal-text {
+                    font-family: 'RobotoMedium', sans-serif;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #290661;
+                    margin-bottom: 20px;
+                }
+
+                .modal-action {
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                    justify-content: center;
+
+                    .btn {
+                        /*width: 111px;*/
+                        /*height: 38px;*/
+                        font-family: 'RobotoMedium', sans-serif;
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding: 11px 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.common-incomes__title {
+    margin-bottom: 40px;
+}
+.common-incomes__input {
+    max-width: 397px;
+}
+
+.input-action {
+    display: flex;
+    gap: 11px;
 }
 
 @media screen and (max-width: 1110px) {
@@ -505,6 +596,16 @@ img {
             }
         }
     }
+
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .modal-body {
+                    width: auto;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -550,5 +651,26 @@ img {
                 }
             }
         }
+    }
+
+    .incomes {
+        .container {
+            .row {
+                .card {
+                    .card-title {
+                        text-align: center;
+                    }
+
+                    .actions {
+                        justify-content: space-evenly;
+                    }
+                }
+            }
+        }
+    }
+
+    .common-incomes__title {
+        font-size: 30px !important;
+        line-height: 36px !important;
     }
 }

@@ -58,9 +58,10 @@
                     <button type="button"
                             class="btn btn-toggle w-100 d-flex align-items-center justify-content-between rounded border-0"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                        <svg display="none" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <svg display="none" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 576 512">
                             <path d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z"
-                            fill="currentColor"/>
+                                  fill="currentColor"/>
                         </svg>
                         <span>Категории</span>
                         <svg class="toggle-icon" width="7" height="14" viewBox="0 0 7 14" fill="none"
@@ -113,49 +114,86 @@
 
 </aside>
 
-<section class="main">
+<section class="main incomes">
     <div class="container">
-        <div class="main__title">Главная</div>
-        <div class="main__menu d-flex gap-3 align-items-center">
-            <button type="button" class="btn btn-outline-secondary active">Сегодня</button>
-            <button type="button" class="btn btn-outline-secondary">Неделя</button>
-            <button type="button" class="btn btn-outline-secondary">Месяц</button>
-            <button type="button" class="btn btn-outline-secondary">Год</button>
-            <button type="button" class="btn btn-outline-secondary">Все</button>
-            <button type="button" class="btn btn-outline-secondary">Интервал</button>
-            <div class="main__interval">с<a href="#">Дата</a>по<a href="#">Дата</a></div>
-        </div>
-        <div class="main__info d-flex">
-            <div class="income d-flex flex-column align-items-center">
-                <div class="main__info-title">Доходы</div>
-                <div class="main__info-legend d-flex align-items-center">
-                    <span><i class="legend-box red"></i>Red</span>
-                    <span><i class="legend-box orange"></i>Orange</span>
-                    <span><i class="legend-box yellow"></i>Yellow</span>
-                    <span><i class="legend-box green"></i>Green</span>
-                    <span><i class="legend-box blue"></i>Blue</span>
-                </div>
-                <div class="main__info-diagram">
-                    <img src="../static/images/income.png" alt="income diagram">
+        <div class="main__title incomes__title">Доходы</div>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-3 g-4 d-flex">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Депозиты</h5>
+                        <div class="actions d-flex gap-2">
+                            <a href="#" class="btn btn-primary w-134">Редактировать</a>
+                            <a href="#" class="btn btn-danger w-88" data-bs-toggle="modal"
+                               data-bs-target="#exampleModal">Удалить</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main__line"></div>
-            <div class="expenses d-flex flex-column align-items-center">
-                <div class="main__info-title">Расходы</div>
-                <div class="main__info-legend d-flex align-items-center">
-                    <span><i class="legend-box red"></i>Red</span>
-                    <span><i class="legend-box orange"></i>Orange</span>
-                    <span><i class="legend-box yellow"></i>Yellow</span>
-                    <span><i class="legend-box green"></i>Green</span>
-                    <span><i class="legend-box blue"></i>Blue</span>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Зарплата</h5>
+                        <div class="actions d-flex gap-2">
+                            <a href="#" class="btn btn-primary w-134">Редактировать</a>
+                            <a href="#" class="btn btn-danger w-88" data-bs-toggle="modal"
+                               data-bs-target="#exampleModal">Удалить</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="main__info-diagram">
-                    <img src="../static/images/expenses.png" alt="expenses diagram">
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Сбережения</h5>
+                        <div class="actions d-flex gap-2">
+                            <a href="#" class="btn btn-primary w-134">Редактировать</a>
+                            <a href="#" class="btn btn-danger w-88" data-bs-toggle="modal"
+                               data-bs-target="#exampleModal">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Инвестиции</h5>
+                        <div class="actions d-flex gap-2">
+                            <a href="#" class="btn btn-primary w-134">Редактировать</a>
+                            <a href="#" class="btn btn-danger w-88" data-bs-toggle="modal"
+                               data-bs-target="#exampleModal">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="#" class="card-body d-flex align-items-center justify-content-center">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.5469 6.08984V9.05664H0.902344V6.08984H14.5469ZM9.32422 0.511719V15.0039H6.13867V0.511719H9.32422Z"
+                                  fill="currentColor"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="modal-text">Вы действительно хотите удалить категорию?<br>Связанные доходы будут удалены навсегда.</p>
+                <div class="modal-action">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Да, удалить</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Не удалять</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

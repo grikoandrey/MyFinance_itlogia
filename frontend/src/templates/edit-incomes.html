@@ -113,47 +113,19 @@
 
 </aside>
 
-<section class="main">
-    <div class="container">
-        <div class="main__title">Главная</div>
-        <div class="main__menu d-flex gap-3 align-items-center">
-            <button type="button" class="btn btn-outline-secondary active">Сегодня</button>
-            <button type="button" class="btn btn-outline-secondary">Неделя</button>
-            <button type="button" class="btn btn-outline-secondary">Месяц</button>
-            <button type="button" class="btn btn-outline-secondary">Год</button>
-            <button type="button" class="btn btn-outline-secondary">Все</button>
-            <button type="button" class="btn btn-outline-secondary">Интервал</button>
-            <div class="main__interval">с<a href="#">Дата</a>по<a href="#">Дата</a></div>
-        </div>
-        <div class="main__info d-flex">
-            <div class="income d-flex flex-column align-items-center">
-                <div class="main__info-title">Доходы</div>
-                <div class="main__info-legend d-flex align-items-center">
-                    <span><i class="legend-box red"></i>Red</span>
-                    <span><i class="legend-box orange"></i>Orange</span>
-                    <span><i class="legend-box yellow"></i>Yellow</span>
-                    <span><i class="legend-box green"></i>Green</span>
-                    <span><i class="legend-box blue"></i>Blue</span>
-                </div>
-                <div class="main__info-diagram">
-                    <img src="../static/images/income.png" alt="income diagram">
-                </div>
+<section class="main edit-incomes">
+    <div class="container container__edit-incomes">
+        <div class="main__title common-incomes__title">Редактирование категории доходов</div>
+        <form>
+            <div class="common-incomes__input mb-4">
+                <label for="incomesInput" class="form-label"></label>
+                <input type="text" class="form-control" id="incomesInput" placeholder="Название...">
             </div>
-            <div class="main__line"></div>
-            <div class="expenses d-flex flex-column align-items-center">
-                <div class="main__info-title">Расходы</div>
-                <div class="main__info-legend d-flex align-items-center">
-                    <span><i class="legend-box red"></i>Red</span>
-                    <span><i class="legend-box orange"></i>Orange</span>
-                    <span><i class="legend-box yellow"></i>Yellow</span>
-                    <span><i class="legend-box green"></i>Green</span>
-                    <span><i class="legend-box blue"></i>Blue</span>
-                </div>
-                <div class="main__info-diagram">
-                    <img src="../static/images/expenses.png" alt="expenses diagram">
-                </div>
+            <div class="input-action edit-incomes__action">
+                <button type="button" class="btn btn-success">Сохранить</button>
+                <button type="button" class="btn btn-danger">Отмена</button>
             </div>
-        </div>
+        </form>
     </div>
 </section>
 
