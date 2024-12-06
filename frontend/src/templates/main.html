@@ -128,29 +128,15 @@
         <div class="main__info d-flex">
             <div class="income d-flex flex-column align-items-center">
                 <div class="main__info-title">Доходы</div>
-                <div class="main__info-legend d-flex align-items-center">
-                    <span><i class="legend-box red"></i>Red</span>
-                    <span><i class="legend-box orange"></i>Orange</span>
-                    <span><i class="legend-box yellow"></i>Yellow</span>
-                    <span><i class="legend-box green"></i>Green</span>
-                    <span><i class="legend-box blue"></i>Blue</span>
-                </div>
                 <div class="main__info-diagram">
-                    <img src="../static/images/income.png" alt="income diagram">
+                    <canvas id="myChartIncomes"></canvas>
                 </div>
             </div>
             <div class="main__line"></div>
             <div class="expenses d-flex flex-column align-items-center">
                 <div class="main__info-title">Расходы</div>
-                <div class="main__info-legend d-flex align-items-center">
-                    <span><i class="legend-box red"></i>Red</span>
-                    <span><i class="legend-box orange"></i>Orange</span>
-                    <span><i class="legend-box yellow"></i>Yellow</span>
-                    <span><i class="legend-box green"></i>Green</span>
-                    <span><i class="legend-box blue"></i>Blue</span>
-                </div>
                 <div class="main__info-diagram">
-                    <img src="../static/images/expenses.png" alt="expenses diagram">
+                    <canvas id="myChartExpenses"></canvas>
                 </div>
             </div>
         </div>
@@ -158,5 +144,8 @@
 </section>
 
 <script src="../js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/diagram.js"></script>
+
 </body>
 </html>

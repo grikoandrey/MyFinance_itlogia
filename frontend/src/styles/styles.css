@@ -223,9 +223,10 @@ img {
 
         .main__info {
             margin-left: 24px;
+            justify-content: space-between;
 
             .income {
-                padding-right: 84px;
+                /*padding-right: 84px;*/
             }
 
             .main__line {
@@ -236,7 +237,7 @@ img {
             }
 
             .expenses {
-                padding-left: 84px;
+                /*padding-left: 84px;*/
             }
 
             .main__info-title {
@@ -375,6 +376,12 @@ img {
     gap: 11px;
 }
 
+canvas {
+    width: 100%;
+    min-width: 420px;
+    height: auto;
+}
+
 @media screen and (max-width: 1110px) {
     .main {
         padding: 30px 0 0 0;
@@ -422,6 +429,17 @@ img {
                 }
             }
         }
+    }
+
+    canvas {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    canvas {
+        min-width: 0;
+        max-width: 250px;
     }
 }
 
@@ -491,6 +509,12 @@ img {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 690px) {
+    canvas {
+        max-width: 200px;
     }
 }
 
