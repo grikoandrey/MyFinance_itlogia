@@ -12,23 +12,6 @@ export class Router {
         this.initEvents();
         this.routes = [
             {
-                route: '/',
-                title: 'Главная',
-                filePathTemplate: '/templates/main.html',
-                useLayout: '/templates/layout.html',
-                load: () => {
-                    new Main();
-                    // new Main(this.openNewRoute.bind(this));
-                },
-                // scripts: ['chart.umd.js', 'diagram.js'],
-            },
-            {
-                route: '/404',
-                title: 'Страница не найдена',
-                filePathTemplate: '/templates/404.html',
-                useLayout: false,
-            },
-            {
                 route: '/login',
                 title: 'Авторизация',
                 filePathTemplate: '/templates/login.html',
@@ -52,7 +35,25 @@ export class Router {
                     new Logout(this.openNewRoute.bind(this));
                 }
             },
+            {
+                route: '/',
+                title: 'Главная',
+                filePathTemplate: '/templates/main.html',
+                useLayout: '/templates/layout.html',
+                load: () => {
+                    new Main();
+                    // new Main(this.openNewRoute.bind(this));
+                },
+                // scripts: ['chart.umd.js', 'diagram.js'],
+            },
+            {
+                route: '/404',
+                title: 'Страница не найдена',
+                filePathTemplate: '/templates/404.html',
+                useLayout: false,
+            },
         ];
+        this.openNewRoute('/login').then();
     };
 
     initEvents() {
