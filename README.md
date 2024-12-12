@@ -23,4 +23,6 @@ npm start
 
 фронт:
 npm run dev
+
+npm run build
 npm run http-server
