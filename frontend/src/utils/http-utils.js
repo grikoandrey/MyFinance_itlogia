@@ -28,8 +28,6 @@ export class HttpUtils {
         if (body) {
             params.body = JSON.stringify(body);
         }
-
-        // let response = null;
         try {
             const response = await fetch(`${config.api}${url}`, params); // Запрос к серверу
             // Сохраняем JSON-ответ в result.response

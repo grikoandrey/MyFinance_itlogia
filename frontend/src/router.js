@@ -42,6 +42,7 @@ export class Router {
                 useLayout: '/templates/layout.html',
                 load: () => {
                     new Main();
+                    //Это пока не изменил сейчас, так как другие страницы в следующем этапе
                     // new Main(this.openNewRoute.bind(this));
                 },
                 // scripts: ['chart.umd.js', 'diagram.js'],
