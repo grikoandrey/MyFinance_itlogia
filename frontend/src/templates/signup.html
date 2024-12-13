@@ -1,21 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>signup</title>
-    <link rel="stylesheet" href="../styles/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body>
-
 <section class="signup">
     <div class="container__signup">
         <div class="signup__content">
             <div class="signup__logo logo text-center mb-5">
-                <img src="../static/images/logo_large.png" alt="logo">
+                <img src="/images/logo_large.png" alt="logo">
             </div>
             <div class="signup__title mb-4">Создайте аккаунт</div>
             <form class="signup__form">
@@ -27,8 +14,8 @@
                         </svg>
                     </span>
                     <label for="user"></label>
-                    <input type="text" class="form-control" placeholder="ФИО" id="user">
-                    <span id="user-error" class="error invalid-feedback">Введите корректно данные</span>
+                    <input type="text" class="form-control" placeholder="Фамилия Имя" id="user">
+                    <span id="user-error" class="error invalid-feedback">Введите корректно данные через пробел</span>
                 </div>
                 <div class="input-group mb-2">
                     <span class="input-group-text">
@@ -39,7 +26,7 @@
                         </svg>
                     </span>
                     <label for="email"></label>
-                    <input type="email" class="form-control is-invalid" placeholder="Электронная почта" id="email">
+                    <input type="email" class="form-control" placeholder="Электронная почта" id="email">
                     <span id="email-error" class="error invalid-feedback">Введите правильный адрес почты</span>
                 </div>
                 <div class="input-group mb-2">
@@ -52,7 +39,7 @@
                     </span>
                     <label for="password"></label>
                     <input type="password" class="form-control" placeholder="Пароль" id="password">
-                    <span id="password-error" class="error invalid-feedback">Введите пароль</span>
+                    <span id="password-error" class="error invalid-feedback">Введите пароль (цифры, БуКвы, 8 символов)</span>
                 </div>
                 <div class="input-group mb-2">
                     <span class="input-group-text">
@@ -63,17 +50,12 @@
                         </svg>
                     </span>
                     <label for="rePassword"></label>
-                    <input type="password" class="form-control is-invalid" placeholder="Подтверждение пароля" id="rePassword">
+                    <input type="password" class="form-control" placeholder="Подтверждение пароля" id="rePassword">
                     <span id="rePassword-error" class="error invalid-feedback">Повторите пароль</span>
                 </div>
                 <button type="button" class="btn btn-primary w-100" id="process-button">Войти</button>
             </form>
-            <div class="signup__info mt-3">Уже есть аккаунт? <a href="#">Войдите в систему</a></div>
+            <div class="signup__info mt-3">Уже есть аккаунт? <a href="/login">Войдите в систему</a></div>
         </div>
     </div>
 </section>
-
-
-<script src="../js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
