@@ -1,4 +1,4 @@
-<aside class="aside__menu aside__menu-large d-flex flex-column justify-content-between vh-100">
+<aside class="sidebar aside__menu aside__menu-large d-flex flex-column justify-content-between vh-100">
     <div class="aside__up">
         <div class="aside__first text-center">
             <a href="javascript:void(0)">
@@ -8,7 +8,7 @@
         <div class="aside__second mt-5 px-3">
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="/" class="nav-link active" aria-current="page">
+                    <a href="/" class="nav-link" aria-current="page">
                         <svg class="bi pe-none me-2" width="16" height="16" viewBox="0 0 15 14" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -25,7 +25,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="incExp.html" class="nav-link">
+                    <a href="/operations" class="nav-link">
                         <svg class="bi pe-none me-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -42,8 +42,8 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <button type="button"
-                            class="btn btn-toggle active w-100 d-flex align-items-center justify-content-between rounded-bottom-0 border-0"
+                    <a href="javascript:void(0)" type="button"
+                            class="btn btn-toggle w-100 d-flex align-items-center justify-content-between rounded-bottom-0 border-0"
                             data-bs-toggle="dropdown" aria-expanded="false">
                         <svg display="none" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 576 512">
@@ -57,13 +57,13 @@
                                   d="M0.145063 13.3539C0.051021 13.2601 -0.00183105 13.1327 -0.00183105 12.9999C-0.00183105 12.867 0.051021 12.7397 0.145063 12.6459L5.79206 6.99987L0.145063 1.35387C0.0185907 1.2274 -0.0308022 1.04306 0.0154897 0.8703C0.0617817 0.697536 0.196726 0.562593 0.36949 0.5163C0.542254 0.470008 0.726591 0.519401 0.853063 0.645873L6.85306 6.64587C6.9471 6.73968 6.99996 6.86705 6.99996 6.99987C6.99996 7.1327 6.9471 7.26007 6.85306 7.35387L0.853063 13.3539C0.759259 13.4479 0.63189 13.5008 0.499063 13.5008C0.366235 13.5008 0.238867 13.4479 0.145063 13.3539Z"
                                   fill="currentColor"/>
                         </svg>
-                    </button>
+                    </a>
                     <ul class="dropdown-menu rounded-top-0 border-primary w-100">
                         <li>
-                            <a href="incomes.html" class="dropdown-item">Доходы</a>
+                            <a href="/incomes" class="dropdown-item">Доходы</a>
                         </li>
                         <li>
-                            <a href="expenses.html" class="dropdown-item rounded-bottom active">Расходы</a>
+                            <a href="/expenses" class="dropdown-item rounded-bottom">Расходы</a>
                         </li>
                     </ul>
                 </li>
@@ -71,18 +71,18 @@
         </div>
     </div>
     <div class="aside__down">
-        <div class="aside__third p-3">Баланс: <span class="ps-2">500$</span></div>
+        <div class="aside__third p-3">Баланс: <a id="balance" class="ps-2 text-decoration-none"></a></div>
         <div class="aside__fourth p-3">
             <div class="dropdown">
-                <a href="#" class="btn d-flex align-items-center text-decoration-none"
+                <a href="javascript:void(0)" class="btn d-flex align-items-center text-decoration-none"
                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <svg class="rounded-circle me-2" width="32" height="32" viewBox="0 0 36 36" fill="none"
+                    <svg class="rounded-circle me-2 w-100" width="32" height="32" viewBox="0 0 36 36" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <circle cx="18" cy="18" r="18" fill="#D9D9D9"/>
                         <path d="M18 18C19.0609 18 20.0783 17.5786 20.8284 16.8284C21.5786 16.0783 22 15.0609 22 14C22 12.9391 21.5786 11.9217 20.8284 11.1716C20.0783 10.4214 19.0609 10 18 10C16.9391 10 15.9217 10.4214 15.1716 11.1716C14.4214 11.9217 14 12.9391 14 14C14 15.0609 14.4214 16.0783 15.1716 16.8284C15.9217 17.5786 16.9391 18 18 18ZM20.6667 14C20.6667 14.7072 20.3857 15.3855 19.8856 15.8856C19.3855 16.3857 18.7072 16.6667 18 16.6667C17.2928 16.6667 16.6145 16.3857 16.1144 15.8856C15.6143 15.3855 15.3333 14.7072 15.3333 14C15.3333 13.2928 15.6143 12.6145 16.1144 12.1144C16.6145 11.6143 17.2928 11.3333 18 11.3333C18.7072 11.3333 19.3855 11.6143 19.8856 12.1144C20.3857 12.6145 20.6667 13.2928 20.6667 14ZM26 24.6667C26 26 24.6667 26 24.6667 26H11.3333C11.3333 26 10 26 10 24.6667C10 23.3333 11.3333 19.3333 18 19.3333C24.6667 19.3333 26 23.3333 26 24.6667ZM24.6667 24.6613C24.6653 24.3333 24.4613 23.3467 23.5573 22.4427C22.688 21.5733 21.052 20.6667 18 20.6667C14.9467 20.6667 13.312 21.5733 12.4427 22.4427C11.5387 23.3467 11.336 24.3333 11.3333 24.6613H24.6667Z"
                               fill="#6C757D"/>
                     </svg>
-                    <span class="pe-1">Андрей Грико</span>
+                    <span class="pe-1 text-start" id="profileName"></span>
                 </a>
                 <ul class="dropdown-menu text-small shadow">
                     <li><a class="dropdown-item" href="/logout">Выход</a></li>
@@ -97,14 +97,14 @@
     <aside class="aside__menu aside__menu-small d-flex flex-column justify-content-between vh-100">
         <div class="aside__up">
             <div class="aside__first text-center">
-                <a href="/" class="">
+                <a href="javascript:void(0)">
                     <img src="/images/logo_small.png" alt="small logo">
                 </a>
             </div>
             <div class="aside__second mt-5 px-3">
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="main.html" class="nav-link active" aria-current="page">
+                        <a href="/" class="nav-link" aria-current="page">
                             <svg class="bi pe-none me-2" width="16" height="16" viewBox="0 0 15 14" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -121,7 +121,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="incExp.html" class="nav-link">
+                        <a href="/operations" class="nav-link">
                             <svg class="bi pe-none me-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -138,8 +138,8 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <button type="button"
-                                class="btn btn-toggle active w-100 d-flex align-items-center justify-content-between rounded-bottom-0 border-0"
+                        <a href="javascript:void(0)"
+                                class="btn btn-toggle w-100 d-flex align-items-center justify-content-between rounded-bottom-0 border-0"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             <svg display="none" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 576 512">
@@ -153,13 +153,13 @@
                                       d="M0.145063 13.3539C0.051021 13.2601 -0.00183105 13.1327 -0.00183105 12.9999C-0.00183105 12.867 0.051021 12.7397 0.145063 12.6459L5.79206 6.99987L0.145063 1.35387C0.0185907 1.2274 -0.0308022 1.04306 0.0154897 0.8703C0.0617817 0.697536 0.196726 0.562593 0.36949 0.5163C0.542254 0.470008 0.726591 0.519401 0.853063 0.645873L6.85306 6.64587C6.9471 6.73968 6.99996 6.86705 6.99996 6.99987C6.99996 7.1327 6.9471 7.26007 6.85306 7.35387L0.853063 13.3539C0.759259 13.4479 0.63189 13.5008 0.499063 13.5008C0.366235 13.5008 0.238867 13.4479 0.145063 13.3539Z"
                                       fill="currentColor"/>
                             </svg>
-                        </button>
+                        </a>
                         <ul class="dropdown-menu rounded-top-0 border-primary w-100">
                             <li>
-                                <a href="incomes.html" class="dropdown-item">Доходы</a>
+                                <a href="/incomes" class="dropdown-item">Доходы</a>
                             </li>
                             <li>
-                                <a href="expenses.html" class="dropdown-item rounded-bottom active">Расходы</a>
+                                <a href="/expenses" class="dropdown-item rounded-bottom">Расходы</a>
                             </li>
                         </ul>
                     </li>
@@ -167,21 +167,21 @@
             </div>
         </div>
         <div class="aside__down">
-            <div class="aside__third p-3">Баланс: <span class="ps-2">500$</span></div>
+            <div class="aside__third p-3">Баланс: <a id="balance-mob" class="ps-2 text-decoration-none"></a></div>
             <div class="aside__fourth p-3">
                 <div class="dropdown">
-                    <a href="#" class="btn d-flex align-items-center text-decoration-none"
+                    <a href="javascript:void(0)" class="btn d-flex align-items-center text-decoration-none"
                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <svg class="rounded-circle me-2" width="32" height="32" viewBox="0 0 36 36" fill="none"
+                        <svg class="rounded-circle me-2 w-100" width="32" height="32" viewBox="0 0 36 36" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <circle cx="18" cy="18" r="18" fill="#D9D9D9"/>
                             <path d="M18 18C19.0609 18 20.0783 17.5786 20.8284 16.8284C21.5786 16.0783 22 15.0609 22 14C22 12.9391 21.5786 11.9217 20.8284 11.1716C20.0783 10.4214 19.0609 10 18 10C16.9391 10 15.9217 10.4214 15.1716 11.1716C14.4214 11.9217 14 12.9391 14 14C14 15.0609 14.4214 16.0783 15.1716 16.8284C15.9217 17.5786 16.9391 18 18 18ZM20.6667 14C20.6667 14.7072 20.3857 15.3855 19.8856 15.8856C19.3855 16.3857 18.7072 16.6667 18 16.6667C17.2928 16.6667 16.6145 16.3857 16.1144 15.8856C15.6143 15.3855 15.3333 14.7072 15.3333 14C15.3333 13.2928 15.6143 12.6145 16.1144 12.1144C16.6145 11.6143 17.2928 11.3333 18 11.3333C18.7072 11.3333 19.3855 11.6143 19.8856 12.1144C20.3857 12.6145 20.6667 13.2928 20.6667 14ZM26 24.6667C26 26 24.6667 26 24.6667 26H11.3333C11.3333 26 10 26 10 24.6667C10 23.3333 11.3333 19.3333 18 19.3333C24.6667 19.3333 26 23.3333 26 24.6667ZM24.6667 24.6613C24.6653 24.3333 24.4613 23.3467 23.5573 22.4427C22.688 21.5733 21.052 20.6667 18 20.6667C14.9467 20.6667 13.312 21.5733 12.4427 22.4427C11.5387 23.3467 11.336 24.3333 11.3333 24.6613H24.6667Z"
                                   fill="#6C757D"/>
                         </svg>
-                        <span class="pe-1">Андрей Грико</span>
+                        <span class="pe-1 text-start" id="profileName-mob"></span>
                     </a>
                     <ul class="dropdown-menu text-small shadow">
-                        <li><a class="dropdown-item" href="/logout">Выход</a></li>
+                        <li class="nav-item"><a class="dropdown-item" data-action="/expenses" href="/logout">Выход</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,6 +1,6 @@
-import {AuthUtils} from "../utils/auth-utils.js";
-import {ValidationUtils} from "../utils/validation-utils.js";
-import {AuthService} from "../services/auth-service.js";
+import {AuthUtils} from "../../utils/auth-utils.js";
+import {ValidationUtils} from "../../utils/validation-utils.js";
+import {AuthService} from "../../services/auth-service.js";
 
 export class LogIn {
     constructor(openNewRoute) {

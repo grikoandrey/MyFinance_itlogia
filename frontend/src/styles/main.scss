@@ -311,6 +311,12 @@ img {
         }
       }
     }
+
+    .table {
+      max-width: 1140px;
+      font-size: 16px;
+    }
+
   }
 }
 
@@ -420,5 +426,5 @@ canvas {
 }
 
 .offcanvas {
-  width: 106px !important;
+  width: 150px !important;
 }
