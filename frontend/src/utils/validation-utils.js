@@ -20,7 +20,6 @@ export class ValidationUtils {
                 condition = element.value && element.value === options.compareTo;
             }
         }
-
         if (condition) {
             element.classList.remove('is-invalid');
             return true;
